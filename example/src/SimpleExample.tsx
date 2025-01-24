@@ -6,7 +6,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import {
   BottomSheetScreenProps,
   createBottomSheetNavigator,
-} from '@th3rdwave/react-navigation-bottom-sheet';
+} from '../../src/index.tsx';
 import * as React from 'react';
 import { Button, StyleSheet, Text, View } from 'react-native';
 
@@ -102,6 +102,7 @@ export function SimpleExample() {
           name="Sheet"
           component={SheetScreen}
           getId={({ params }) => `sheet-${params.id}`}
+          
         />
         <BottomSheet.Screen
           name="BigSheet"
